@@ -28,8 +28,7 @@
     "react-player": "^2.6.2",
     "react-slick": "^0.27.13",
     "react-web-media-player": "^1.1.6",
-    "slick-carousel": "^1.8.1",
-    "wavesurfer.js": "^4.2.0"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
