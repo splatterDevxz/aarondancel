@@ -15,7 +15,7 @@ class Audio extends React.Component {
   		return(	
   			<div className='container'>
   				<div className="wrapper-podcast-grid">
-  					<div id="buzzsprout-player-6414094"></div>
+  					<div id="player-container-xxx"></div>
 			  	</div>
 		    </div>
   		)

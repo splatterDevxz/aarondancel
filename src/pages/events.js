@@ -20,7 +20,7 @@ const Events =()=>{
 
 						<h1 id="event-heading">
 							<span className="sub-heading">events | Aaron Dancel</span>
-							No upcoming events, for now. 
+							No upcoming events, for now.
 							I give talks and workshops about
 							JavaScript and Web topics - Performance, 
 							Progressive Web Apps, Project Fugu, Firebase, 

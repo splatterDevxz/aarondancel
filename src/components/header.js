@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
     </header>
 
     <Helmet>
-      <script src="https://www.buzzsprout.com/1493704/6414094-the-virtualpreneur-with-ruben-licera.js?container_id=buzzsprout-player-6414094&player=small" type="text/javascript" charset="utf-8"></script>
+      <script src="https://www.buzzsprout.com/1493704/6414094-the-virtualpreneur-with-ruben-licera.js?container_id=player-container-xxx&player=small" type="text/javascript" charset="utf-8"></script>
     </Helmet>
   </>
 )
