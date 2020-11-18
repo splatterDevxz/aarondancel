@@ -11,12 +11,10 @@ class Audio extends React.Component {
 		}
 	}
 
-			
   	render(){
   		return(	
   			<div className='container'>
-  				<div className="wrapper-podcast-grid"> 
-  					<script src="https://www.buzzsprout.com/1493704/6414094-the-virtualpreneur-with-ruben-licera.js?container_id=buzzsprout-player-6414094&player=small" type="text/javascript" charset="utf-8"></script>
+  				<div className="wrapper-podcast-grid">
   					<div id="buzzsprout-player-6414094"></div>
 			  	</div>
 		    </div>
