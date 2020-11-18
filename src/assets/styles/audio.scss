@@ -1,0 +1,111 @@
+
+:root {
+    --button-height: 10px;
+    --button-color: #fff;
+}
+
+.wrapper-podcast-grid{
+    
+    background: linear-gradient(180deg, #ffffff3b 27.48%, #393e52 100%);
+    border-radius: 4px;
+    padding: 4% 4%;
+    grid-template-columns: 38% 1fr;
+    margin-bottom: 6%;
+
+    p{ 
+        color: #ffffff99;
+    }
+    
+    #image-wrapper{
+        img{
+            width: 75%;
+        }
+    }
+
+    .buzzsprout-player {
+        background: none !important;
+        border: none !important;
+    }
+
+    .mejs-playpause-button{
+        background: #ce0000 !important;
+    }
+}
+
+.circleButton{
+	
+    border-radius: 50px;
+    height: 70px;
+    position: absolute;
+    width: 70px;
+    margin: -25px 0 0 -25px;
+    margin-top: 34px;
+    border: 4px solid #9a0608;
+    background: #9A0609 !important;
+    
+    &:active, &:hover{
+    	background: #eee;
+    }
+}
+
+ 	
+.circleButtonPlay{
+	position: relative;
+    height: 100%;	
+}
+
+		
+.circleButton .playButton{
+	&:before{
+	    content: "";
+	    display: block;
+	    width: 0;	
+	    height: 0;
+	    border-style: solid;
+	    border-width: 10px 0 10px 20px;
+	    border-color: transparent transparent transparent #fff;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin: -10px 0 0 -7px;
+	}
+}
+		
+.circleButton .pauseButton{
+	margin: 0 auto;
+	position: relative;
+    background: none;
+    border: none;
+    height: calc(var(--button-height) * 2);
+    width: calc(var(--button-height) * 2 * 0.86);
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 33%;
+        background: var(--button-color);
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right: 0;
+    }
+}
+
+#waveCustomize{
+	wave{
+		wave{
+			border-right: 1px solid rgb(210, 210, 210) !important;
+		}
+	}
+}
+
+.podcast{
+    display: block;
+    .waveform-container{
+        margin-left: 10%;
+    }
+}
+ 

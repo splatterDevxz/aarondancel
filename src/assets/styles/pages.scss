@@ -1,0 +1,172 @@
+#events-page,
+#podcast-page,
+.my-story-section,
+.blog-section{
+	#event-heading,
+	#podcast-heading{
+		width: 80%;
+	    font-weight: 100;
+	    margin: 8% 0;
+	}
+
+	.sub-heading{
+	    display: block;
+	    font-size: 12px;
+	    margin-bottom: 6%;
+	    text-transform: uppercase;
+	    color: #ffffff8c;
+	    letter-spacing: 7px;
+	}
+}
+
+
+.stroke-heading{
+	-webkit-text-fill-color: #323546;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #e86f70;
+    font-size: 6rem;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.1;
+    top: 14%;
+    width: 100%;
+    /* left: 0; */
+    text-transform: uppercase;
+}
+
+#podcast-page,
+#events-page{
+	padding: 6% 0;
+}
+
+.my-story-section{
+	padding: 15.3rem 0;
+}
+
+.blog-section{
+	padding: 13% 0;
+}
+
+.grid-row-events{
+	
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px;
+   	margin: 8% 0;
+
+    .grid-child{
+        background: #eeeeee12;
+    	padding: 13%;
+    	height: 350px;
+    }
+
+    h5{
+        font-family: 'Roboto', sans-serif;
+	    font-size: 25px;
+	    font-weight: 100;
+    }
+
+    h1{
+        margin-bottom: 10%;
+    }
+    span{
+	    color: #ea4d4dee;
+	    text-transform: capitalize;
+    }
+}
+
+
+.event-footnote{
+	padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+
+   	li{
+		list-style:none;
+		color:#fff;
+
+		&:nth-child(2){
+		    
+		    color: #ffffff3b;
+    		font-family: 'Roboto', sans-serif;
+
+    		&:before{
+    			content:"";
+    		}
+		}
+	}
+}
+
+.heading-foot-note{
+	h1{
+		text-align: right;
+    	font-size: 18px;
+	}
+}
+
+#heading-past-event{
+	
+	font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+
+    &:after{
+ 	    content: "";
+	    width: 26%;
+	    background: #3f4252;
+	    display: inline-block;
+	    height: 1px;
+	    position: absolute;
+	    transform: translate(20px, 21px);
+    }
+}
+
+
+.grid-two-columns{
+	.l-col{
+	    text-align: left;
+	    span{
+	        color: #eeeeee87;
+	    }
+	    h1{
+	    	font-size:1rem;
+	    }
+	}	
+
+	.wraps-info{	
+		margin: 0;
+	    padding: 14px;
+	    text-align:left;
+
+	    span{
+	    	color: #ff5e5e;
+	    }
+
+		p{
+			margin:0 !important;
+		}
+	}
+
+	.r-col{	
+		&:before{
+			content: "";
+		    width: 1px;
+		    height: 200px;
+		    display: flex;
+		    position: absolute;
+		    background: #6969698c;
+		    transform: translate(-39px, 10px);
+		}	
+
+		h1{
+	    	font-size: 1rem;
+		}
+	}
+}
+
+#wrapper-container{
+    border-bottom: 1px solid #eeeeee1f;
+}
+

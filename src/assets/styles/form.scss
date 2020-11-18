@@ -1,0 +1,57 @@
+#newsletter-form{
+    
+    height: 100%;
+    text-align: center;
+    width: 90%;
+
+    form{
+        width: 100%;
+    }	
+
+    input{
+	    padding: 17px;
+	    border: none;
+	    width:60%;
+	    background: #d2dce04f;
+	    color: #fff;
+    }
+    
+   	#submit-button{
+    	width: 34% !important;
+		background-image: linear-gradient(to bottom right, #f16c6e, #e41113);
+	}
+
+	label{
+		display: block;
+	    font-size: 21px;
+	    text-align: left;
+	    margin: 4% 8px;
+	    color: #fff;
+	}
+}
+		
+.contact-info-wrapper{
+	
+	background: #474958;
+    padding: 17px;
+    margin-bottom: 6%;
+    text-align: center;
+    padding: 5%;
+    border-top: 4px solid #dc6060;
+
+    h1{
+	    font-size: 3rem;
+	    margin-bottom: 0;
+    }
+
+    p{
+        color: #eee;
+    }
+}
+
+.form-wrapper-ww{
+	width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

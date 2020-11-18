@@ -1,0 +1,20 @@
+#navigation{
+	padding: 4% 0;
+	ul{
+		display: flex;
+    	justify-content: space-evenly;
+
+    	li{
+	     	list-style-type:none;
+	     	a{
+	     		text-decoration:none;
+	     		color: #ffffff59;
+	     	}
+     		[aria-current="page"]{
+     			color: #fff;
+			    border-bottom: 1px solid #ff4a4aee;
+			    padding: 8px 0;
+     		}
+	    }
+	}
+}
