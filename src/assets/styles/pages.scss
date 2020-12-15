@@ -21,17 +21,17 @@
 
 
 .stroke-heading{
-	-webkit-text-fill-color: #323546;
+	-webkit-text-fill-color: #323546;	
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #e86f70;
     font-size: 6rem;
-    margin: 0;
+  	margin: 0;
     position: absolute;
     z-index: 1;
     opacity: 0.1;
     top: 14%;
-    width: 100%;
-    /* left: 0; */
+    left: 14%;
+    width: 40%;
     text-transform: uppercase;
 }
 

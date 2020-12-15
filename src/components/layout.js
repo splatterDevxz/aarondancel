@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "components/footer"
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 const Layout = ({ children }) => {  
@@ -28,6 +29,12 @@ const Layout = ({ children }) => {
       <div id="body-wrapper">
          <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           <main>{children}</main>
+
+            <MessengerCustomerChat
+                pageId={process.env.GATSBY_FB_PAGE_ID}
+                appId="{process.env.GATSBY_FB_APP_ID}
+            /> 
+
           <Footer/>
       </div>
     </>

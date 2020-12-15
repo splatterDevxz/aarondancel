@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Logo from "../../static/logo/main_logo.svg"
 
 const Navigation = ()=>{
 
@@ -10,11 +10,15 @@ const Navigation = ()=>{
 			<div className="container">
 				<nav id="navigation">
 					<div className="grid-two-columns">
+						
 						<div>	
 							<h1>
-								<a href="/">LOGO</a>
+								<a href="/">
+									<img id="main-logo" src={Logo} alt="main_logo"/>
+								</a>
 							</h1>
 						</div>
+
 						<ul>
 							<li>
 								<Link to="/my-story">My Story</Link>
