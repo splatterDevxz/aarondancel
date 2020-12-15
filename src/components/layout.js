@@ -32,8 +32,8 @@ const Layout = ({ children }) => {
 
             <MessengerCustomerChat
                 pageId={process.env.GATSBY_FB_PAGE_ID}
-                appId="{process.env.GATSBY_FB_APP_ID}
-            /> 
+                appId={process.env.GATSBY_FB_APP_ID}
+            />
 
           <Footer/>
       </div>
