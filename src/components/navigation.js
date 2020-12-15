@@ -14,7 +14,11 @@ const Navigation = ()=>{
 						<div>	
 							<h1>
 								<a href="/">
-									<img id="main-logo" src={Logo} alt="main_logo"/>
+									<img 
+										id="main-logo"
+										src={Logo}
+										alt="main_logo"
+									/>
 								</a>
 							</h1>
 						</div>
