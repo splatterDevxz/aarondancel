@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `) 
 
   return (
     <>
@@ -31,8 +31,8 @@ const Layout = ({ children }) => {
           <main>{children}</main>
 
             <MessengerCustomerChat
-                pageId={process.env.GATSBY_FB_PAGE_ID}
-                appId={process.env.GATSBY_FB_APP_ID}
+                pageId="380107163215975"
+                appId="106995420880939"
             />
 
           <Footer/>

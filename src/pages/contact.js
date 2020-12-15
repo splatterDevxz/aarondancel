@@ -32,16 +32,6 @@ const Contact =()=>{
 								<div className="grid-child-col r-col">
 									<h1>Mailing Address</h1>
 									<div className="wraps-info">
-										<span>Delaware</span>
-										<p>831 N Tatnall Street, Suite M #188
-										Wilmington, DE 19801</p>
-									</div>
-
-									<div className="wraps-info">
-										<span>New York</span>
-										<p>928 Hillside Blvd., New Hyde Park New York, NY 11040</p>
-									</div>
-									<div className="wraps-info">
 										<span>Philippines</span>
 										<p>608, 6F, Jesa-ITC Bldg. 
 										Mango Avenue, Cebu City, 6000</p>

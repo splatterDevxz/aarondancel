@@ -24,7 +24,7 @@ const Footer = ()=>{
 								<SocMed/>
 
 								<div className="wr-credits">
-									©  Syclla Creatives
+									©  Sycll△ Creatives
 								</div>
 							</div>
 						</Col>
