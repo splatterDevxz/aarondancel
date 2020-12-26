@@ -11,7 +11,7 @@
     p{
         color: #ffffff36;
     }
-
+    
     .number-count{
 	    font-size: 42px;
 	    font-weight: 700;
@@ -385,18 +385,26 @@
     }
 
     .photo-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 8%;
-        padding-left: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        border-spacing: 15px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 7% 0;
 
-        img{
-            width: 190px;
-        }
+        .lazy__image {
+            img{
+                width: 190px;
+                padding: 5px;
+            }                
+            
+            &:nth-child(3){
+                img{
+                    width: 79%;
+                    text-align: right;
+                }
+            }
+        } 
     }
 
     .content-story{

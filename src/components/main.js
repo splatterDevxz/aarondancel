@@ -17,7 +17,7 @@ const Main = ()=>{
 				<div className="container">
 					<div className="grid-main-section">
 						<div className="l-wraps child-main">
-							<img src={'https://lh3.googleusercontent.com/GD9VY_G9H0dHZZpfigVyz_BScHCGK_nrWBN2VSpWr79hx6i4UZBvVFbs4Q3NSBKx0lDB-OtNVs_k9tx4KCWA9RO4v_nbgQphajR7EgQ4dbGqMvIIEIoqaL4ZxxQzL-VPG1T5L72o-8HoiWFniJCNq7vTEdHVcrBwHnPw9rLOAm_D3lgEDEiTrZ_2qpZTo4JYGQQmoOpSGvMtMqjUQTTZT4cCrtpFDGhUpHFDbHLJG7t15MWo0ZczECAhXlUAGXvgL-6NLx9OVuAoFIkPk9Ulw8ftncQR9QCJohFk4_eh85x39UMiXXfoT77ZDQMvEb4ENk1FUVXefOGyO7Y810gfX2Jph95WSjvllUjKSlkHY_iYgEBYiYR6dx9q_0LY0gzV0h9DoKIrCfNT-LuEYp9Nn85C2TWj_CTmjVA1H2IDNug1GH7RcBvPRyDNyvu9UzTDM-OLrJzOEApPUk8Oa6Mmt_lGTRP5he6JNtL7fkkxm4MxHaYH5RBrn7pIOX7cyeqPrvR4bSsauMKkATqjRH1gcJiSoqxdI35pUPMD0rFOqlAgp6QptZ4yD-lXwF_g67VOkS03FNl5IhuFoSIsd-d4VVDOeXQ9fUVUjqdki5FIKimOVU6oNyg8C4yVArQ47eH0_x6AbAuclcIXJ3lK1uEoVyEiPTK3ukjN_lsGHCbJ9KzjoZPZ9Los-_NaU9A=w978-h652-no?authuser=0'} />
+							<img src="https://firebasestorage.googleapis.com/v0/b/aaron-dancel-site.appspot.com/o/IMG_5.jpg?alt=media&token=0693957f-91c4-497a-8f4e-660c2b672100" />
 						</div>
 
 						<div className="r-wraps child-main">

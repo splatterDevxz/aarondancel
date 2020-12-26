@@ -3,6 +3,7 @@ import Layout from "components/layout"
 import Aaron from "static/images/aaron_dancel.png"
 import { graphql } from "gatsby"
 import { BLOCKS} from '@contentful/rich-text-types';
+import {LoadingOutlined} from "@ant-design/icons"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import firebase from "gatsby-plugin-firebase"
 import LazyImage from  "components/Lazy/lazy-image"
@@ -11,12 +12,12 @@ import LazyImage from  "components/Lazy/lazy-image"
 export const query = graphql`
 	query{
 		contentfulAboutTheAuthor{
-		id
-		title
-		bio {
-		raw
+			id
+			title
+			bio {
+				raw
+			}
 		}
-	}
 	}
 `
 
@@ -24,33 +25,32 @@ export const query = graphql`
 const MyStory =({data})=>{
 
 	const [content, setContentState] = React.useState(null);
-	const [imageSrc, setImageState] = React.useState({data:[]});
+	const [imageSrc, setImageState] = React.useState([]);
 
 
-	function displayImage(imageRef) {
-		imageRef.getDownloadURL().then(function(url) {
-		  imageSrc.data.push(url);
-		}).catch(function(error) {
-		  // Handle any errors
-		});
-	}
+	React.useEffect(()=> {
 
-	React.useEffect(() => {
-		 firebase.storage()
-		.refFromURL('gs://aaron-dancel-site.appspot.com')
-		.listAll()
-		.then(res=>{
-			 return res.items.forEach(function(imageRef) {
-				// And finally display them
-				return displayImage(imageRef);
-			});
-		})
-	
+		if(imageSrc.length <= 0){
+			firebase.storage()
+				.refFromURL('gs://aaron-dancel-site.appspot.com')
+				.listAll()
+				.then(res=>{
+					return res.items.forEach(function(imageRef) {
+						// And finally display them		
+						imageRef
+						.getDownloadURL()
+						.then(res=>(setImageState((imageSrc)=>[...imageSrc , res])))
+
+				});
+			})
+
+		}
+
 		//
 		return ()=>{
 			return [];
 		}
-	}, [])	
+	}, [imageSrc])	
 
 	const options = {
 		renderNode: {
@@ -60,16 +60,13 @@ const MyStory =({data})=>{
 		}
 	};
 	 
-	function paragraphClass(node) {
+	function paragraphClass(node){
 		const className = 'odd';
 		//alternate logic for 'odd' | 'even'
 		return className;
 	}
-	
-	const {bio, title } =data.contentfulAboutTheAuthor;
 
-
-	console.log(imageSrc);
+	const {bio, title } = data.contentfulAboutTheAuthor;
 
 	return(		
 		<>
@@ -113,17 +110,28 @@ const MyStory =({data})=>{
 
 								<div className="photo-grid">
 									{
-										imageSrc.data.map((img, indx)=>{
-											return(
+										imageSrc.length > 0 ? (
+											imageSrc.map((img, indx)=>{
+												return(
+														<>
+															<LazyImage
+																src={img} 
+																altName="_aaron_dancel_photos"
+															/>
+														</>
+													)
+												})
+											) : (
 												<>
-													<LazyImage
-														src={img} 
-														altName="_aaron_dancel_photos"
-													/>
+													<h1>Loading Images 
+														<span style={{
+															margin:"0 20px"
+														}}>
+															<LoadingOutlined/>
+														</span>
+													</h1>
 												</>
-											)
-										})
-										
+										)
 									}
 								</div>
 							</div>
