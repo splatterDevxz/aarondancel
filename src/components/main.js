@@ -1,18 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "./slider"
+import firebase from "gatsby-plugin-firebase"
+
 
 const Main = ()=>{
 
+ 	const [user, setUser] = useState();
 
-	 const tempoLinks = [
-        'https://mcrichcanyoneering.com/wp-content/uploads/2020/01/Travelguycebu-Oslob-Whaleshark-4-300x300.jpg',
-        'https://mcrichcanyoneering.com/wp-content/uploads/2020/01/kkday-2-300x300.jpg',
-        'https://mcrichcanyoneering.com/wp-content/uploads/2020/01/moalboal-300x300.jpg',
-        'https://mcrichcanyoneering.com/wp-content/uploads/2020/01/Sea-Turtles-300x300.jpg',
-        'https://mcrichcanyoneering.com/wp-content/uploads/2020/01/Travelguycebu-Oslob-Whaleshark-3-1-300x300.jpg',
-        'https://mcrichcanyoneering.com/wp-content/uploads/2020/01/Travelguycebu-Oslob-Whaleshark-2-1-300x300.jpg'
-    ]
-    
+	React.useEffect(()=>{
+		
+	},[firebase])
 
 	return(
 		<>
