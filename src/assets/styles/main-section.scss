@@ -384,6 +384,21 @@
         margin: 5% 0;
     }
 
+    .photo-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 8%;
+        padding-left: 90px;
+
+        img{
+            width: 190px;
+        }
+    }
+
     .content-story{
 
          h1{
@@ -428,7 +443,7 @@
         font-size: 18px;
 
         span{
-             
+            
             &:nth-child(1){
                 font-size: 2rem;
                 font-weight: 900;

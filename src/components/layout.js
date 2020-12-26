@@ -25,21 +25,14 @@ const Layout = ({ children }) => {
   `) 
 
   return (
-    <>
-      <div id="body-wrapper">
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-          <main>{children}</main>  
-        <Footer/>
-      </div>
-
-      
-      <MessengerCustomerChat
-            pageId="106995420880939"
-            appId="380107163215975"
-        />
-
-    </>
-  )
+      <>
+        <div id="body-wrapper">
+          <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <main>{children}</main>  
+          <Footer/>
+        </div>
+      </>
+   )
 }
 
 Layout.propTypes = {

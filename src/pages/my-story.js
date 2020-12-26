@@ -1,11 +1,12 @@
-import React,{useEffect} from "react"
+import React from "react"
 import Layout from "components/layout"
 import Aaron from "static/images/aaron_dancel.png"
-import Slider from "components/slider"
 import { graphql } from "gatsby"
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { BLOCKS} from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import firebase from "gatsby-plugin-firebase"
+import LazyImage from  "components/Lazy/lazy-image"
+
 
 export const query = graphql`
 	query{
@@ -35,15 +36,20 @@ const MyStory =({data})=>{
 	}
 
 	React.useEffect(() => {
-		firebase.storage()
+		 firebase.storage()
 		.refFromURL('gs://aaron-dancel-site.appspot.com')
 		.listAll()
 		.then(res=>{
-			 res.items.forEach(function(imageRef) {
+			 return res.items.forEach(function(imageRef) {
 				// And finally display them
-				displayImage(imageRef);
+				return displayImage(imageRef);
 			});
 		})
+	
+		//
+		return ()=>{
+			return [];
+		}
 	}, [])	
 
 	const options = {
@@ -65,7 +71,7 @@ const MyStory =({data})=>{
 
 	console.log(imageSrc);
 
-	return(
+	return(		
 		<>
 			<Layout>
 				<section className="my-story-section">
@@ -100,8 +106,26 @@ const MyStory =({data})=>{
 								
 							</div>
 
-							<div className="grid-child image_cont">
-								<img src={Aaron} alt="__aaron_dancel"/>
+							<div className="grid-child">
+								<div className="image_cont">
+									<img src={Aaron} alt="__aaron_dancel"/>
+								</div>
+
+								<div className="photo-grid">
+									{
+										imageSrc.data.map((img, indx)=>{
+											return(
+												<>
+													<LazyImage
+														src={img} 
+														altName="_aaron_dancel_photos"
+													/>
+												</>
+											)
+										})
+										
+									}
+								</div>
 							</div>
 						</div>
 					</div>
