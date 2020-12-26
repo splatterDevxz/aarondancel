@@ -42,7 +42,7 @@ const Banner = () =>{
 						</p>
 
 						<span id="span-link">
-							<Link href="/my-story">
+							<Link to="/my-story">
 								My Story
 							</Link>
 						</span>

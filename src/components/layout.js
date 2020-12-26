@@ -27,16 +27,17 @@ const Layout = ({ children }) => {
   return (
     <>
       <div id="body-wrapper">
-
-        <MessengerCustomerChat
-            pageId="106995420880939"
-            appId="380107163215975"
-        />
-
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           <main>{children}</main>  
         <Footer/>
       </div>
+
+      
+      <MessengerCustomerChat
+            pageId="106995420880939"
+            appId="380107163215975"
+        />
+
     </>
   )
 }

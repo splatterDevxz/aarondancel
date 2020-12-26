@@ -71,6 +71,7 @@ const LowerMain = ()=>{
 										videoContents.map((vid, indx)=>{
 											return(
 												<Col 
+													key={indx}
 													span={8} 
 													className={`video-key-${indx}`}
 												>
@@ -79,7 +80,6 @@ const LowerMain = ()=>{
 														url={vid.link} 
 														width="100%"
 														height="100%"
-														playIcon
 														onReady={(e)=>doesReady(e)}
 													/>
 

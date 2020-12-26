@@ -16,7 +16,7 @@ const Footer = ()=>{
 							<nav>
 								<li key="my_story"><Link to="/my-story">My Story</Link></li>
 								<li key="events"><Link to="/events">Events</Link></li>
-								<li key="contact"><Link to="/blog">Blog</Link></li>
+								<li key="blog"><Link to="/blog">Blog</Link></li>
 								<li key="contact"><Link to="/contact">Contact</Link></li>
 							</nav>
 
