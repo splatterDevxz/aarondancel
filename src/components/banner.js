@@ -22,13 +22,13 @@ const Banner = () =>{
 						<SocialMedia/>
 						
 						<div className="wrapper-img">
-							<img src={Aaron} alt="aaron-dancel" />
+							<img src={Aaron} alt="aaron-dancel"/>
 						</div>
 					</div>
 
 					<div className="heading-wraps child-grid-wrapper">
 
-						<span className="sub-contents">Motivational Speaker</span>
+						<span className="sub-contents">Entreprenuer</span>
 						<h1>
 							Push yourself, because 
 							no one else is going to
@@ -36,9 +36,9 @@ const Banner = () =>{
 						</h1>
 
 						<p>
-							identifying what holds you back, 
-							you’re better able... holds you back, 
-							you’re better able...
+							My name is Aaron. I run a medium-sized enterprise in my hometown,
+							Cebu City, Philippines, producing more than USD 1 million
+							in sales revenue each year.
 						</p>
 
 						<span id="span-link">

@@ -21,7 +21,6 @@ export const query = graphql`
 	}
 `
 
-
 const MyStory =({data})=>{
 
 	const [content, setContentState] = React.useState(null);
@@ -82,7 +81,7 @@ const MyStory =({data})=>{
 												<span className="sub-heading">My Story | Aaron Dancel</span>
 												{title}
 											</h1>
-
+										
 											{
 												documentToReactComponents(JSON.parse(bio.raw), options)
 											}
@@ -113,24 +112,24 @@ const MyStory =({data})=>{
 										imageSrc.length > 0 ? (
 											imageSrc.map((img, indx)=>{
 												return(
-														<>
-															<LazyImage
-																src={img} 
-																altName="_aaron_dancel_photos"
-															/>
-														</>
+													<>
+														<LazyImage
+															src={img} 
+															altName="_aaron_dancel_photos"
+														/>
+													</>
 													)
 												})
 											) : (
-												<>
-													<h1>Loading Images 
-														<span style={{
-															margin:"0 20px"
-														}}>
-															<LoadingOutlined/>
-														</span>
-													</h1>
-												</>
+											<>
+												<h1>Loading Images 
+													<span style={{
+														margin:"0 20px"
+													}}>
+														<LoadingOutlined/>
+													</span>
+												</h1>
+											</>
 										)
 									}
 								</div>

@@ -4,6 +4,14 @@ import Logo from "../../static/logo/main_logo.svg"
 
 const Navigation = ()=>{
 
+	const LinkList = [
+		'my-story',
+		'podcast',
+		'events',
+		'videos',
+		'blog',
+		'contact'
+	]
 
 	return(
 		<>
@@ -24,21 +32,17 @@ const Navigation = ()=>{
 						</div>
 
 						<ul>
-							<li>
-								<Link to="/my-story">My Story</Link>
-							</li>
-							<li>
-								<a href="/podcast">Podcast</a>
-							</li>
-							<li>
-								<Link to="/events">Events</Link>
-							</li>
-							<li>
-								<Link to="/blog">Blog</Link>
-							</li>
-							<li>
-								<Link to="/contact">Contact</Link>
-							</li>
+							{
+								LinkList.map((link, indx)=>(
+									<li>
+										<Link 
+										to={`/${link}`} 
+										style={{textTransform:"capitalize"}}>
+											{link.replace('-', '')}
+										</Link>
+									</li>
+								))
+							}
 						</ul>
 					</div>
 				</nav>
