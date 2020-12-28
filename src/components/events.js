@@ -4,7 +4,6 @@ import { Row, Col} from "antd"
 
 const Events = () =>{
 
-
 	const EventList = [
 		{date: 'January 01, 2020', name: "Events Title Heading 01"},
 		{date: 'January 01, 2020', name: "Events Title Heading 02"},

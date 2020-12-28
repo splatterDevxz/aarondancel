@@ -19,12 +19,17 @@
         }
 
         a{
-            color: #fd6464;
-            text-decoration: underline;
+                color: #fd6464;
+                border: 1px solid #fd6464;
+                padding: 6px;
+                margin-top: 7%;
+                display: block;
+                width: 18%;
+                text-align: center;
         }
     }
 }
-
+ 
 #wrapper-container{
     padding: 4% 0;
 }

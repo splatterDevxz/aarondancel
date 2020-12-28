@@ -34,9 +34,9 @@ const Navigation = ()=>{
 						<ul>
 							{
 								LinkList.map((link, indx)=>(
-									<li>
+									<li key={indx}>
 										<Link 
-										to={`/${link}`} 
+										to={`/${link}`}
 										style={{textTransform:"capitalize"}}>
 											{link.replace('-', '')}
 										</Link>

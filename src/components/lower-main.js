@@ -1,24 +1,17 @@
 import React, {useState } from "react"
 import { Row,Col } from "antd"
 import ReactPlayer from 'react-player/lazy'
+import YoutubePlayer from "components/Player/video-player"
 
 const LowerMain = ()=>{
 
-	const videoContents =[
+	const linksVideo =[
 		{title:'What Should Expect First Before Profit', link:"https://youtu.be/2fg0aCyjDCQ"},
 		{title:'How To Treat Business', link:"https://youtu.be/Rcg637V_Szc"},
 		{title:'How Entrepreneurs Should Use Social Media', link:"https://youtu.be/ETddHujvzLs"},
 	]
 
-	 const [isReady, trigerFunc] = useState(false);
-
-	const doesReady =(callback)=>{
-		if(callback){
-			return trigerFunc(true)
-		}
-	}
-
-
+	
 	return(
 		<>
 			<section className="lower-main-section">
@@ -57,45 +50,11 @@ const LowerMain = ()=>{
 						</Col>
 					</Row>
 
-
-					<div id="sub-content-videos">
-						<Row 
-							style={{
-								flexFlow : "row", 
-								gap:"22px",
-								transform: 'translateX(-21px)'
-							}}>
-
-								<>	
-									{
-										videoContents.map((vid, indx)=>{
-											return(
-												<Col 
-													key={indx}
-													span={8} 
-													className={`video-key-${indx}`}
-												>
-													<ReactPlayer 
-														className="react-player"
-														url={vid.link} 
-														width="100%"
-														height="100%"
-														onReady={(e)=>doesReady(e)}
-													/>
-
-													<div className="wrapper-contents">
-														<h5>{vid.title}</h5>
-														<span>By: Aaaron Dancel</span>
-													</div>
-												</Col>
-											)
-										})
-									}
-							</>	
-						
-						</Row>			
-					</div>
-				</div>
+					<YoutubePlayer 
+						videoContents={linksVideo} 
+					/>
+					
+				</div>	
 			</section>
 		</>
 	)

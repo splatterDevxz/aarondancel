@@ -4,7 +4,8 @@ import { graphql } from "gatsby"
 import Thumbnail from "static/thumbnail/thumbnail.png"
 import BannerParallax from "components/parrallax-banner"
 import { DiscussionEmbed } from "disqus-react"
-
+import { BLOCKS} from '@contentful/rich-text-types';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 export const query = graphql`
 	query($slug:String!){
@@ -30,7 +31,22 @@ const BlogTemplate = (props)=>{
 	  shortname: 'aaron-dancel',
 	  config: { identifier:  12, slug}
 	}
-	
+
+	const options = {
+		renderNode: {
+		  [BLOCKS.PARAGRAPH]: (node, children) => (
+			<p className={paragraphClass(node)}>{children}</p>
+		  )
+		}
+	};
+	 
+	function paragraphClass(node){
+		const className = 'odd';
+		//alternate logic for 'odd' | 'even'
+		return className;
+	}
+
+
 	const {title, published, body , blogImage} = (props.data.contentfulBlogPost);
 
 	return(
@@ -48,7 +64,11 @@ const BlogTemplate = (props)=>{
 				  filter: 'grayscale(100%)'
 				}}>
 
-					<div classNam="container">
+					<div 
+						style={{
+							background: '#000000ab',
+							height: '400px'
+						}}>
 						<h1>
 							{title}
 						</h1>
@@ -70,43 +90,10 @@ const BlogTemplate = (props)=>{
 								<span className="published">{published}</span>
 							</div>
 						</div>
-
-			
-						<p>
-							Lorem Ipsum is simply dummy text of the 
-							printing and typesetting industry. Lorem 
-							Ipsum has been the industry's standard 
-							dummy text ever since the 1500s, when an 
-							unknown printer took a galley of type and 
-							scrambled it to make a type specimen book. 
-							It has survived not only five centuries
-							dummy text ever since the 1500s, when an 
-							unknown printer took a galley of type and 
-							scrambled it to make a type specimen book. 
-							It has survived not only five centuries
-						</p>
-
-						<p>
-							It has survived not only five centuries
-							dummy text ever since the 1500s, when an 
-							unknown printer took a galley of type and 
-							scrambled it to make a type specimen book. 
-							It has survived not only five centuries
-						</p>
 						
-						<p>
-							Lorem Ipsum is simply dummy text of the 
-							printing and typesetting industry. Lorem 
-							Ipsum has been the industry's standard 
-							dummy text ever since the 1500s, when an 
-							unknown printer took a galley of type and 
-							scrambled it to make a type specimen book. 
-							It has survived not only five centuries
-							dummy text ever since the 1500s, when an 
-							unknown printer took a galley of type and 
-							scrambled it to make a type specimen book. 
-							It has survived not only five centuries
-						</p>
+						{
+							documentToReactComponents(JSON.parse(body.raw), options)
+						}
 					</div>
 				</section>
 
