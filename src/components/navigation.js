@@ -6,7 +6,6 @@ const Navigation = ()=>{
 
 	const LinkList = [
 		'my-story',
-		'podcast',
 		'events',
 		'videos',
 		'blog',

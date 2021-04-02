@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
     <Nav/>
     </header>
   </>
-)
+) 
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

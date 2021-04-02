@@ -1,32 +1,15 @@
 
 .grid-banner{
-	display: grid;
-    grid-template-columns: 1fr 40%;
-    gap: 20px;
-    padding: 152px 0;
-    
-    h1{
-    	color: #fff !important;
-        line-height: 1.2;
-        font-weight:500;
-    }
-    
-    p{ 
-        color: #ffffff36;
-    }
+    line-height: 0;
 
-    .sub-contents{
-        color: #ffffff36;
-        text-transform: uppercase;
-        letter-spacing: 7px;
-        font-size: 12px;
-        display: block;
-        margin-bottom: 8%;
-    } 
+    video{
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .heading-wraps{
-    max-width: 85%;    
+    max-width: 85%;
 }
 
 .tagline-ft{

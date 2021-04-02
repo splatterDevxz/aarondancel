@@ -1,0 +1,14 @@
+@media only screen and (max-width: 990px) {
+    .grid-banner{
+        grid-template-columns: auto !important;
+        padding: 130px 13% !important;
+    }
+    
+    .left-heading-wraps .wrapper-img img{
+        display: none;
+    }
+
+    .heading-wraps{
+        max-width: 100% !important;
+    }
+}   

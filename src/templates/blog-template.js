@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "components/layout"
 import { graphql } from "gatsby"
 import Thumbnail from "static/thumbnail/thumbnail.png"
-import BannerParallax from "components/parrallax-banner"
 import { DiscussionEmbed } from "disqus-react"
 import { BLOCKS} from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
@@ -16,7 +15,7 @@ export const query = graphql`
 		      file {
 		        url
 		      }
-		    }
+		    }	
 			body{
 				raw
 			}
@@ -73,8 +72,8 @@ const BlogTemplate = (props)=>{
 							{title}
 						</h1>
 					</div>
-
 				</div>
+				
 				<section className="single-blog">
 					<div className="container">
 
@@ -90,13 +89,46 @@ const BlogTemplate = (props)=>{
 								<span className="published">{published}</span>
 							</div>
 						</div>
-						
-						{
-							documentToReactComponents(JSON.parse(body.raw), options)
-						}
+
+			
+						<p>
+							Lorem Ipsum is simply dummy text of the 
+							printing and typesetting industry. Lorem 
+							Ipsum has been the industry's standard 
+							dummy text ever since the 1500s, when an 
+							unknown printer took a galley of type and 
+							scrambled it to make a type specimen book. 
+							It has survived not only five centuries
+							dummy text ever since the 1500s, when an 
+							unknown printer took a galley of type and 
+							scrambled it to make a type specimen book. 
+							It has survived not only five centuries
+						</p>
+
+						<p>
+							It has survived not only five centuries
+							dummy text ever since the 1500s, when an 
+							unknown printer took a galley of type and 
+							scrambled it to make a type specimen book. 
+							It has survived not only five centuries
+						</p>
+
+						<p>
+							Lorem Ipsum is simply dummy text of the 
+							printing and typesetting industry. Lorem 
+							Ipsum has been the industry's standard 
+							dummy text ever since the 1500s, when an 
+							unknown printer took a galley of type and 
+							scrambled it to make a type specimen book. 
+							It has survived not only five centuries
+							dummy text ever since the 1500s, when an 
+							unknown printer took a galley of type and 
+							scrambled it to make a type specimen book. 
+							It has survived not only five centuries
+						</p>
 					</div>
 				</section>
-
+				
 				<div className="commentSection container">
 					<DiscussionEmbed {...disqusConfig} />
 				</div>

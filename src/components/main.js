@@ -1,16 +1,8 @@
-import React, {useState} from 'react';
-import Slider from "./slider"
-import firebase from "gatsby-plugin-firebase"
+import React from 'react';
 
 
 const Main = ()=>{
-
- 	const [user, setUser] = useState();
-
-	React.useEffect(()=>{
-		
-	},[firebase])
-
+	
 	return(
 		<>
 			<main id="main-section">
@@ -28,7 +20,7 @@ const Main = ()=>{
 							</h1>
 
 							<p>
-								identifying what holds you back, 
+								identifying wsshat holds you back, 
 								you’re better able...
 							</p>
 							<p>
