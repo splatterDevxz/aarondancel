@@ -20,8 +20,7 @@ const Contact =()=>{
 
 								<div className="grid-child-col l-col">
 									<h1>General Inquiries</h1>
-									<span>Email:support@inkharedsolution</span>
-
+									<span>Email:talktome@aarondancel.com</span>
 									<p>	
 										Please note that JV proposals, 
 										business deals and all correspondence

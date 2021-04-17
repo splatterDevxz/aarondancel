@@ -13,27 +13,29 @@ const Events = () =>{
 	return(
 		<>
 			<div className="container">
-				<Row>
-					<Col className="events-heading">
-						<h1>Events<span className="dot">.</span></h1>
-						<p>Bringing lives for every filipinos</p>
-					</Col>
+				<div className="wrapper-events">
+					<Row>
+						<Col className="events-heading">
+							<h1>Events<span className="dot">.</span></h1>
+							<p>Bringing lives for every filipinos</p>
+						</Col>
 
-					<Col className="events-info">
-						<nav id="navlist-info">
-						{
-							 EventList.map((event, i)=>{
-							 	return(
-							 		<li key={i}>
-							 			<span className="date">{event.date}</span>
-							 			<span className="event-name">{event.name}</span>
-							 		</li>	
-							 	)
-							 })
-						}
-						</nav>
-					</Col>	
-				</Row>
+						<Col className="events-info">
+							<nav id="navlist-info">
+							{
+								EventList.map((event, i)=>{
+									return(
+										<li key={i}>
+											<span className="date">{event.date}</span>
+											<span className="event-name">{event.name}</span>
+										</li>	
+									)
+								})
+							}
+							</nav>
+						</Col>
+					</Row>
+				</div>
 			</div>
 		</>
 	)

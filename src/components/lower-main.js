@@ -49,11 +49,6 @@ const LowerMain = ()=>{
 							/>
 						</Col>
 					</Row>
-
-					<YoutubePlayer 
-						videoContents={linksVideo} 
-					/>
-					
 				</div>	
 			</section>
 		</>

@@ -1,6 +1,6 @@
 #main-section{
 	background: #222430;
-    padding: 8% 0;
+    padding: 12% 0;
 
     h1{
         color: #ffff;
@@ -157,7 +157,7 @@
 
 .branding{
     h5{
-        margin-bottom: 11%;
+        margin-bottom: 15%;
         text-align: center;
         font-size: 1rem;
         text-transform: uppercase;
@@ -169,9 +169,17 @@
 
 /*Lower Main*/
 
+.wrapper-events{
+    margin: 11% 0;
+    border-top: 7px solid #eeeeee2b;
+    border-bottom: 7px solid #eeeeee2e;
+    padding: 5% 0 5% 0;
+}
+
 .lower-main-section{
     padding: 0;
     margin-top: 8%;
+    
 
     .video-content{
         padding: 0 3%;

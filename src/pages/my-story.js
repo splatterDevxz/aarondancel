@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import { BLOCKS} from '@contentful/rich-text-types';
 import {LoadingOutlined} from "@ant-design/icons"
 import firebase from "gatsby-plugin-firebase"
+import 'firebase/storage';
 import LazyImage from  "components/Lazy/lazy-image"
 
 
@@ -90,20 +91,17 @@ const MyStory =({data})=>{
 								</p>
 								<p>
 									To say that the heartaches and defeats that I’ve experienced can overwhelm a weaker man is an understatement. I’ve
-endured so much, yet learned as much. I focused on the lessons I’ve learned and came to a life-changing conclusion: in
-order for me to get the life I yearned for, I had to focus on Sales.
+									endured so much, yet learned as much. I focused on the lessons I’ve learned and came to a life-changing conclusion: in order for me to get the life I yearned for, I had to focus on Sales.
 								</p>
 
 								<p>
 									I learned to sell my vision to partners who helped me get my business started. I sold my idea to my employees who
-aligned their focus with my own. I managed to get investors see things from my perspective and invest their confidence
-in me. I set up 4 thriving businesses, mentored successful employees, generated satisfied clients, and learned many
-valuable stuff, all while having my feet rooted firmly on the ground.
+									aligned their focus with my own. I managed to get investors see things from my perspective and invest their confidence in me. I set up 4 thriving businesses, mentored successful employees, generated satisfied clients, and learned many
+									valuable stuff, all while having my feet rooted firmly on the ground.
 								</p>
 
 								<p>
-									Since it has always been my principle to show gratitude by paying it forward, I urge everyone to take this journey with
-me. I invite those who have the courage and humility to take the next step, to be better than who you were.
+									Since it has always been my principle to show gratitude by paying it forward, I urge everyone to take this journey with me. I invite those who have the courage and humility to take the next step, to be better than who you were.
 								</p>
 
 								<div className="heading-foot-note">
@@ -114,49 +112,40 @@ me. I invite those who have the courage and humility to take the next step, to b
 								</div>
 							</div>
 
-								<div className="heading-foot-note">
-									<h1>
-										<span>Aaron Dancel</span>
-										<span>Ramen CEO</span>
-									</h1>
+								<div className="grid-child">
+									<div className="image_cont">
+										<img src={Aaron} alt="__aaron_dancel"/>
+									</div>
+
+									<div className="photo-grid">
+										{
+											imageSrc.length > 0 ? (
+												imageSrc.map((img, indx)=>{
+													return(
+														<>
+															<LazyImage
+																src={img} 
+																altName="_aaron_dancel_photos"
+															/>
+														</>
+														)
+													})
+												) : (
+												<>
+													<h1>Loading Images 
+														<span style={{
+															margin:"0 20px"
+														}}>
+															<LoadingOutlined/>
+														</span>
+													</h1>
+												</>
+											)
+										}
+									</div>
 								</div>
-							
-								
+
 							</div>
-
-							<div className="grid-child">
-								<div className="image_cont">
-									<img src={Aaron} alt="__aaron_dancel"/>
-								</div>
-
-								<div className="photo-grid">
-									{
-										imageSrc.length > 0 ? (
-											imageSrc.map((img, indx)=>{
-												return(
-													<>
-														<LazyImage
-															src={img} 
-															altName="_aaron_dancel_photos"
-														/>
-													</>
-													)
-												})
-											) : (
-											<>
-												<h1>Loading Images 
-													<span style={{
-														margin:"0 20px"
-													}}>
-														<LoadingOutlined/>
-													</span>
-												</h1>
-											</>
-										)
-									}
-								</div>
-							</div>
-
 						</div>
 				</section>
 			</Layout>

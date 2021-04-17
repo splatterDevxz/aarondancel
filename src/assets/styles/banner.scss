@@ -12,6 +12,30 @@
     max-width: 85%;
 }
 
+#backdrop-idle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #000000cf;
+}
+
+.heading-afro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    h1{
+        font-size: 13rem;
+        font-weight: bold;
+        z-index: 3;
+        margin: 0;
+    }
+}
+
 .tagline-ft{
     color: #ffffff36;
     text-transform: uppercase;
