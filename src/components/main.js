@@ -1,11 +1,12 @@
 import React from 'react';
-
+import SubscribeComponent from "components/subscribe-letter"
 
 const Main = ()=>{
-	
+		
 	return(
 		<>
-			<main id="main-section">
+			<SubscribeComponent/>
+			<main id="main-section">	
 				<div className="container">
 					<div className="grid-main-section">
 						<div className="l-wraps child-main">

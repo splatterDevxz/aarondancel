@@ -3,11 +3,11 @@ import {Link} from "gatsby"
 import Fb from "../../static/icons/fb.svg"
 import Insta from "../../static/icons/insta.svg"
 import Linkden from "../../static/icons/linkden.svg"
-import Twitter from "../../static/icons/twitter.svg"
+import Tiktok from "../../static/icons/tiktok.svg"
 
 const SocialMedia = ()=>{
-
-	const icons = [Fb, Insta, Linkden, Twitter]
+	
+	const icons = [Fb, Insta, Linkden, Tiktok]
 	
 	return (
 		<>

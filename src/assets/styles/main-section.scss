@@ -69,6 +69,61 @@
     }
 } 
 
+
+.subscriber-component{
+    position: absolute;
+    background: #000000;
+    transform: translateY(-200px);
+    width: 100%;
+    padding: 7%;
+    text-align: center;
+    box-shadow: 1px 1px 32px 1px #0000002e;
+    main{
+        h1{
+            text-transform: uppercase;
+        }
+        p{
+            margin: 0 !important;
+        }
+    }
+}
+
+#subscribe-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+    input{
+        padding: 9px;
+        border: none;
+        width: 100%;
+        background: #d2dce04f;
+        color: #fff;
+    }
+
+    #submit_btn_subscribe{
+        width: 100%;
+        background-image: linear-gradient(to bottom right, #f16c6e, #e41113);
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}
+
+.area-subs{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 20px;
+
+    .image-holder{
+        img{
+            position: absolute;
+            width: 202px;
+            transform: translate(-90px, 8px);
+            top: 0;
+        }
+    }
+}
+
 #rating-sections{
     margin-top: 8%;
     border-top: 4px solid #eeeeee14;
@@ -147,6 +202,18 @@
 .blog-front-section{
     padding: 9% 0;
     background: #1B1D27;
+    background-image: url("../../../static/bg/bg_logos.svg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0,1);
+    width: 100%;
+    background-size: 100%;
 }
 
 .logo-wrapper{
@@ -170,7 +237,7 @@
 /*Lower Main*/
 
 .wrapper-events{
-    margin: 11% 0;
+    margin: 6% 0;
     border-top: 7px solid #eeeeee2b;
     border-bottom: 7px solid #eeeeee2e;
     padding: 5% 0 5% 0;

@@ -9,7 +9,7 @@ const Banner = () =>{
 				 <div className="heading-afro">
 					<h1>
 						Hustle
-						<span style={{color:"#f71d1d"}}>.</span>
+						<span style={{color:"#f71d1d", fontSize: "27%"}}>.</span>
 					</h1>
 				 </div>
 				<div id="backdrop-idle"></div>
