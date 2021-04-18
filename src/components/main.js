@@ -9,9 +9,6 @@ const Main = ()=>{
 			<main id="main-section">	
 				<div className="container">
 					<div className="grid-main-section">
-						<div className="l-wraps child-main">
-							<img src="https://firebasestorage.googleapis.com/v0/b/aaron-dancel-site.appspot.com/o/IMG_5.jpg?alt=media&token=0693957f-91c4-497a-8f4e-660c2b672100" />
-						</div>
 
 						<div className="r-wraps child-main">
 							<h1>
@@ -41,6 +38,11 @@ const Main = ()=>{
 								</div>	
 							</div>
 						</div>
+
+						<div className="l-wraps child-main">
+							<img src="https://firebasestorage.googleapis.com/v0/b/aaron-dancel-site.appspot.com/o/IMG_5.jpg?alt=media&token=0693957f-91c4-497a-8f4e-660c2b672100" />
+						</div>
+						
 					</div>
 				</div>
 			</main>
