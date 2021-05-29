@@ -6,11 +6,8 @@ const Banner = () =>{
 	return(
 		<>
 			<div className="grid-banner">
-				 <div className="heading-afro">
-					<h1>
-						Hustle
-						<span style={{color:"#f71d1d", fontSize: "27%"}}>.</span>
-					</h1>
+				<div className="heading-afro">
+	
 				 </div>
 				<div id="backdrop-idle"></div>
 				<video autoPlay loop muted id="myVideo">

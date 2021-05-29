@@ -10,14 +10,17 @@ const BlogFront = ()=>{
 		<>	
 			<section className="blog-front-section">
 				<div className="container">
-					<Row style=
+					<Row
+						gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+						id="blog-blocks" 
+						style=
 						{{
 							flexFlow : "row", 
 							gap:"20px",
-							transform : "translateY(-42%)"
+							transform : "translateY(-60%)"
 						}}>
 
-						<Col span={8} className="f-blog-intro gutter-row">
+						<Col  className="f-blog-intro gutter-row">
 							<span>Aaron Dancel</span>
 							<h5>	
 								if you need more inspirtation
@@ -26,7 +29,7 @@ const BlogFront = ()=>{
 								</Link>
 							</h5>
 						</Col>
-						<Col span={8} className="blog-common gutter-row">
+						<Col  className="blog-common gutter-row">
 							<span>Published on December 2020</span>
 							<h5>
 								The Realizing Entrepreneur:
@@ -44,7 +47,7 @@ const BlogFront = ()=>{
 								</li>
 							</nav>
 						</Col>
-						<Col span={8} className="blog-common gutter-row">
+						<Col  className="blog-common gutter-row">
 							<span>Published on December 2020</span>
 							<h5>
 								The Realizing Entrepreneur:

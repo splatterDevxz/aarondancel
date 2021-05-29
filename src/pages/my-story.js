@@ -46,7 +46,8 @@ const MyStory =({data})=>{
 		return ()=>{
 			return [];
 		}
-	}, [imageSrc])	
+	}, [imageSrc])
+
 
 	const options = {
 		renderNode: {
@@ -63,6 +64,7 @@ const MyStory =({data})=>{
 	}
 
 	const {bio, title } = data.contentfulAboutTheAuthor;
+
 
 	return(		
 		<>
