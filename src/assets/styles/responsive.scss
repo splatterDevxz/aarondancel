@@ -108,6 +108,16 @@
     #myVideo{
         display: none;
     }
+
+    #navigation{
+        ul{
+            li{
+                a{
+                    text-transform: capitalize; 
+                }
+            }
+        }
+    }
 }   
 
 @media only screen and (max-width: 750px) {
