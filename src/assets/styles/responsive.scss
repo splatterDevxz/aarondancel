@@ -86,6 +86,28 @@
             display: none !important;
         }
     }
+
+    .images-wraps{
+        img{
+            opacity: 0.3 !important;
+        }
+    }
+    
+    #non-active-hamburger{
+
+        display: grid !important;
+        flex-direction: column;
+        align-items: flex-end !important;
+        justify-content: flex-end !important;
+
+        .hamburger-span{
+            display: block !important;
+        }
+    }
+
+    #myVideo{
+        display: none;
+    }
 }   
 
 @media only screen and (max-width: 750px) {
@@ -101,7 +123,11 @@
     .logo-wrapper{
 
         [alt="stratton_img"]{
-            width: 143px;
+            width: 122px !important;
+        }
+
+        [alt="ink_shared_img"]{
+            width: 60px !important;
         }
 
         [alt="v9_hub"]{
@@ -139,7 +165,7 @@
     }
 
     .footer-soc-med-wrapper{
-        margin-top: 7% !important;
+        margin-top: 17% !important;
     }
 
     .lower-ask-wrapper{
@@ -167,6 +193,12 @@
             }
         }
     }
+
+    .branding{
+        h5{
+            color: #ffffff !important;
+        }
+    }
 } 
 
 
@@ -182,4 +214,39 @@
     .video-wrapper{
         height: 300px;
     }
-}       
+
+    .footer-soc-med-wrapper{
+        display: block !important;
+        text-align: center;
+    }
+    .footer{
+        h5{
+            text-align: center;
+        }
+
+        .footer-info-wraps{
+            nav{
+                display: block !important; 
+                text-align: center;
+                li{
+                    list-style-type: none;
+                    padding: 3% 0;
+                    background: #000;
+                    margin: 3% 0;
+
+                    a{
+                        color: #ffffffb0 !important;
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-soc-med-wrapper{
+        .wr-credits{
+            margin-top: 40px !important;
+        }
+    }
+
+}           

@@ -38,7 +38,7 @@ const Branding = ()=>{
 						className="logo-wrapper">
 						<img 
 							style={{ width: "100px"}}
-							src={InkShared} alt="stratton_img" />
+							src={InkShared} alt="ink_shared_img" />
 					</Col>
 
 					<Col 
