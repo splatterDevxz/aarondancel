@@ -3,7 +3,10 @@
         grid-template-columns: auto !important;
         padding: 130px 13% !important;
     }
-    
+    .container{
+        max-width: 86% !important;
+    }
+
     .left-heading-wraps .wrapper-img img{
         display: none;
     }
@@ -12,7 +15,7 @@
         max-width: 100% !important;
     }
 
-    .heading-afro{
+    .heading-afro{  
         display: block !important;
         position: relative !important;
     }
@@ -43,7 +46,7 @@
         position: relative !important;
         transform: translateY(0px) !important;
     }
-
+    
     #main-section{
         .grid-main-section{
             grid-template-columns: auto !important;
@@ -55,7 +58,8 @@
             .l-wraps{
                 text-align: center;
                 img{
-                    width: 50% !important;
+                    width: 80% !important;
+                    margin-bottom: 7%;
                 }
             }
         }
@@ -63,5 +67,119 @@
 
     #blog-blocks{
         transform: translateY(0%) !important;
+        flex-flow: column !important;
+    }
+
+    .video-wrapper{
+        height: 500px;
+    }
+    
+    #subscribe-form{
+        grid-template-columns: auto !important;
+    }
+    #lower-row-fx{
+        display: grid;
+    }
+
+    .lower-ask-wrapper{
+        &:after{
+            display: none !important;
+        }
     }
 }   
+
+@media only screen and (max-width: 750px) {
+    #row-2-brand-logo,
+    #row-1-brand-logo{
+        transform: translateY(0%) !important;
+        flex-flow: wrap !important;
+    }
+
+    .branding{
+        padding: 16% 0;
+    }
+    .logo-wrapper{
+
+        [alt="stratton_img"]{
+            width: 143px;
+        }
+
+        [alt="v9_hub"]{
+            width: 113px !important;
+        }
+
+        [alt="nbc_image"]{
+            width: 69px !important;
+        }
+
+        [alt="rappler_img"]{
+            width: 73px !important;
+        }
+        
+        [alt="link_malloc_img"]{
+            width: 122px !important;
+        }
+
+    }
+    
+    .footer-info-wraps{
+        order:1;
+        width: 100% !important;
+    }
+
+    .form-wrapper-ww{
+        width: 100% !important; 
+        display: block !important;
+        margin-bottom: 10%;
+    }
+
+    #newsletter-form{
+        width: 100% !important;
+        text-align: left !important;
+    }
+
+    .footer-soc-med-wrapper{
+        margin-top: 7% !important;
+    }
+
+    .lower-ask-wrapper{
+        padding: 18% 0 !important;
+    }
+
+    #navlist-info{
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+    }
+
+    #rating-sections{
+        grid-template-columns: auto;
+    }
+    #main-section{
+        .l-rate{
+            &:after{
+                content: "";
+                width: 194px !important;
+                height: 4px !important;
+                background: #eeeeee1f;
+                transform: translateY(67px) !important;
+                position: absolute;
+            }
+        }
+    }
+} 
+
+
+
+@media only screen and (max-width: 550px){
+
+    .events-heading{
+        h1{
+            font-size: 4rem !important;
+        }
+    }   
+
+    .video-wrapper{
+        height: 300px;
+    }
+}       

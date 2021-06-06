@@ -24,18 +24,26 @@ const Branding = ()=>{
 						justifyContent : "center",
 						maxWidth :"750px",
 						margin : "0 auto"
-					}}>
-					<Col span={8} className="logo-wrapper">
+					}}
+					id="row-1-brand-logo"
+					>
+					<Col 
+						span={8} 
+						className="logo-wrapper">
 						<img src={Stratton} alt="stratton_img" />
 					</Col>
 					
-					<Col span={8} className="logo-wrapper">
+					<Col 
+						span={8} 
+						className="logo-wrapper">
 						<img 
 							style={{ width: "100px"}}
 							src={InkShared} alt="stratton_img" />
 					</Col>
 
-					<Col span={8} className="logo-wrapper">
+					<Col 
+						span={8}
+						className="logo-wrapper">
 						<img src={Bookgini} alt="stratton_img" />
 					</Col>
 				</Row>
@@ -51,7 +59,9 @@ const Branding = ()=>{
 						maxWidth :"590px",
 						margin : "0 auto",
 						paddingTop:"13%"
-					}}>
+					}}
+					id="row-2-brand-logo"
+					>
 					<Col span={8} className="logo-wrapper">
 						<img
 							style={{width:"160px"}} 

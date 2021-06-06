@@ -21,8 +21,10 @@ const LowerMain = ()=>{
 						What I Love to do
 					</h1>
 
-					<Row>				
-						<Col span={12} className="video-content">
+					<Row id="lower-row-fx">				
+						<Col 
+							sm={24} md={24} lg={12} xl={12}
+							className="video-content">
 							<h1>
 								New York Times bestselling
 								author David Wong's Zoey
@@ -39,7 +41,9 @@ const LowerMain = ()=>{
 							</p>
 						</Col>
 
-						<Col span={12}  className="video-wrapper">
+						<Col 
+							sm={24} md={24} lg={12} xl={12}
+							className="video-wrapper">
 							<ReactPlayer 
 								className="react-player"
 								url='https://www.youtube.com/embed/eDDL0eP1ktA' 

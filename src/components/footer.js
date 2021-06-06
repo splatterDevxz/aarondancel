@@ -11,7 +11,10 @@ const Footer = ()=>{
 			<section className="footer">
 				<div className="container">
 					<Row>
-						<Col className="footer-info-wraps" style={{width:'50%'}}>
+						<Col 
+							className="footer-info-wraps"
+							sm={24} md={24} lg={12} xl={12}
+							style={{width:'50%'}}>
 							<h5>Aaron Dancel</h5>
 							<nav>
 								<li key="my_story"><Link to="/my-story">My Story</Link></li>
@@ -28,7 +31,10 @@ const Footer = ()=>{
 							</div>
 						</Col>
 
-						<Col className="form-wrapper-ww">
+						<Col 
+							className="form-wrapper-ww"
+							sm={24} md={24} lg={12} xl={12}
+							style={{width:'50%'}}>
 							<Newsletter/>
 						</Col>
 					</Row>
