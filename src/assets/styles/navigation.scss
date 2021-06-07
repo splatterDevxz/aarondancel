@@ -16,13 +16,24 @@
 			    border-bottom: 1px solid #ff4a4aee;
 			    padding: 8px 0;
      		}
+
+            &:last-child{
+                
+                a{
+                    text-transform: capitalize;
+                    background: #e82e30;
+                    padding: 7px 15px;
+                    color: #ffff;
+                    background-image: linear-gradient(to bottom right, #a20002, #e41113);
+                }
+            }
 	    }
 	}
 }
 
 #main-logo{
-	width: 69px;
-    opacity: 0.9;
+    width: 217px;
+    opacity: 1;
 }
 
 

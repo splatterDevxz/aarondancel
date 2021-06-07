@@ -26,7 +26,7 @@ const Navigation = ()=>{
 		return (
 			<li>
 				<Link 
-					to={filterUrl}>
+					to={`/${filterUrl}`}>
 					{res}
 				</Link>
 			</li>

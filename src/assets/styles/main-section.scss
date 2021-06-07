@@ -253,19 +253,19 @@
 
         p{
             line-height: 2;
-            color: #ffffff36;
         }
     }
 
     .heading-lower-content{
-        font-size: 2rem;
+        font-size: 3rem;
         text-transform: uppercase;
         margin-bottom: 5%;
+        font-weight: 800;
 
         &:after{
             content: "";
             display: block;
-            width: 308px;
+            width: 160px;
             background: #f1484a;
             height: 4px;
         }
