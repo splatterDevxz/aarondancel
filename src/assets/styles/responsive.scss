@@ -2,6 +2,7 @@
     .grid-banner{
         grid-template-columns: auto !important;
         padding: 130px 13% !important;
+        height: 650px;
     }
     .container{
         max-width: 86% !important;
@@ -15,14 +16,17 @@
         max-width: 100% !important;
     }
 
-    .heading-afro{  
-        display: block !important;
+    .heading-afro{
         position: relative !important;
+        h1{
+            text-align: center;
+            line-height: 1;
+        }
     }
     
     #backdrop-idle{
-        display: block;
         position: relative !important;
+        display: none !important
     }
 
     #nav-ul-list{
@@ -341,4 +345,14 @@
         }
     }
 
-}           
+    .heading-afro{
+        #paragh-banr{
+            font-size: 14px !important;
+            line-height: 1.4;
+        }
+        h1{
+            font-size: 3.5rem !important;
+        }
+    } 
+
+}
