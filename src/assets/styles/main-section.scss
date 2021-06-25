@@ -143,6 +143,10 @@
     align-items: flex-start;
     flex-direction: column;
     background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     span{
         color: #ffff;

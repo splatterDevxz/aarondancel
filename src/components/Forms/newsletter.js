@@ -17,7 +17,9 @@ const Newsletter = ()=>{
 					name='email' 
 					className="inputStyles" />
 
-				<input id="submit-button" type="submit" value="Submit"/>
+				<input id="submit-button" 
+					   type="submit" 
+					   value="Submit"/>
 			</form>
 		</>
 	)

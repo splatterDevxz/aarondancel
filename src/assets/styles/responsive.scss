@@ -1,5 +1,6 @@
 @media only screen and (max-width: 990px) {
     .grid-banner{
+        background: url('../../../static/bg/mobile_banr.png');
         grid-template-columns: auto !important;
         padding: 130px 13% !important;
         height: 650px;
@@ -11,7 +12,7 @@
     .left-heading-wraps .wrapper-img img{
         display: none;
     }
-
+    
     .heading-wraps{
         max-width: 100% !important;
     }
