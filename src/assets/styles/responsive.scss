@@ -1,9 +1,13 @@
 @media only screen and (max-width: 990px) {
     .grid-banner{
-        background: url('../../../static/bg/mobile_banr.png');
+        background: url('../../../static/images/mobile_banr.png');
         grid-template-columns: auto !important;
         padding: 130px 13% !important;
         height: 650px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .container{
         max-width: 86% !important;
@@ -24,10 +28,11 @@
             line-height: 1;
         }
     }
-    
+
     #backdrop-idle{
-        position: relative !important;
-        display: none !important
+        top: 0;
+        left: 0;
+        height: 650px !important;
     }
 
     #nav-ul-list{
