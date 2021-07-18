@@ -67,23 +67,45 @@ const Branding = ()=>{
 							style={{width:"160px"}} 
 							src={v9Hub} alt="v9_hub" />
 					</Col>
-					
-					<Col span={8} className="logo-wrapper">
-						<img 
-							style={{ width: "100px"}}
-							src={NBC} alt="nbc_image" />
-					</Col>
-
-					<Col span={8} className="logo-wrapper">
-						<img 
-							style={{width: "100px"}}
-							src={Rappler} alt="rappler_img" />
-					</Col>	
+				
 					<Col span={8} className="logo-wrapper">
 						<img 
 							style={{width:"180px"}}
 							src={LinkMalloc} alt="link_malloc_img" />
 					</Col>	
+				</Row>
+			</div>
+
+
+			<div className="branding"> 
+				<h5>Seen On</h5>
+				<Row
+					style=
+					{{
+						flexFlow : "row",
+						gap:"20px",
+						transform : "translateY(-50%)",
+						textAlign : "center",
+						alignItems : "center",
+						justifyContent : "center",
+						maxWidth :"400px",
+						margin : "0 auto",
+						paddingTop:"0%"
+					}}
+					id="row-3-brand-logo"
+					>
+					<Col span={12} className="logo-wrapper">
+						<img 
+							style={{ width: "100px"}}
+							src={NBC} alt="nbc_image" />
+					</Col>
+
+					<Col span={12} className="logo-wrapper">
+						<img 
+							style={{width: "100px"}}
+							src={Rappler} alt="rappler_img" />
+					</Col>	
+
 				</Row>
 			</div>
 		</>

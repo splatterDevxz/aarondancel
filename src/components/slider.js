@@ -29,7 +29,9 @@ const SliderComponent = ({
 
 	return(
 		<>
-			<section className="slider-section" style={customWidth}>
+			<section 
+				className="slider-section" 
+				style={customWidth}>
                 <Slider {...settings} >
                     {
                         dataImages.map((link, i)=>{

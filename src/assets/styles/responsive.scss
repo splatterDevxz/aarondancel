@@ -217,6 +217,13 @@
     #row-1-brand-logo{
         transform: translateY(0%) !important;
         flex-flow: wrap !important;
+        gap: 59px !important;
+    }
+    
+    #row-3-brand-logo{
+        gap: 0px !important;
+        max-width: 300px !important;
+        transform: translateY(-15%) !important; 
     }
 
     .branding{
@@ -245,7 +252,7 @@
         }
         
         [alt="link_malloc_img"]{
-            width: 122px !important;
+            width: 95px !important;
         }
 
     }
@@ -299,6 +306,7 @@
     .branding{
         h5{
             color: #ffffff !important;
+            letter-spacing: 1px !important;
         }
     }
 } 
